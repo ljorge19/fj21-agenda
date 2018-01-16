@@ -1,6 +1,6 @@
 
 <html>
-<body>
+<body bgcolor="B22222">
 <head>
 <meta charset="utf-8">
 <head>
