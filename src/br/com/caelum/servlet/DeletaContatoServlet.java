@@ -41,7 +41,15 @@ public class DeletaContatoServlet extends HttpServlet {
 		 * Contato resultado = dao.selecionaId(contato); nome = resultado.getNome();
 		 */
 
-		List<Contato> contatos = dao.getLista();
+		/*List<Contato> contatos = dao.getLista();
+		for (Contato contato2 : contatos) {
+			if (contato2.getId() == Long.parseLong(id)) {
+				nome = contato2.getNome();
+			}
+
+		}*/
+		
+		List<Contato> contatos = dao.getListaID(contato);
 		for (Contato contato2 : contatos) {
 			if (contato2.getId() == Long.parseLong(id)) {
 				nome = contato2.getNome();
