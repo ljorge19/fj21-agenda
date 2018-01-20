@@ -14,6 +14,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.mysql.jdbc.Connection;
+
 import br.com.caelum.jdbc.dao.ContatoDao;
 import br.com.caelum.jdbc.modelo.Contato;
 
@@ -52,7 +54,8 @@ public class AdicionaContatoServlet extends HttpServlet {
 		contato.setEmail(email);
 		contato.setDataNascimento(dataNascimento);
 		// salva o contato
-		ContatoDao dao = new ContatoDao();
+		Connection	connection	=	(Connection) request.getAttribute("conexao");
+		ContatoDao dao = new ContatoDao(connection);
 		dao.adiciona(contato);
 		// imprime o nome do contato que foi adicionado
 		RequestDispatcher rd = request.getRequestDispatcher("/contato-adicionado.jsp");
