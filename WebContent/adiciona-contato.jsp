@@ -5,7 +5,7 @@
 
 <h1>Adiciona Contatos</h1>
 <hr />
-<form action="adicionaContato">
+<form action="adicionaContato" method="post">
 	Nome..................: <input type="text" name="nome" /><br /> <br />
 	E-mail.................: <input type="text" name="email" /><br /> <br />
 	Endereço.............: <input type="text" name="endereco" /><br /> <br />
