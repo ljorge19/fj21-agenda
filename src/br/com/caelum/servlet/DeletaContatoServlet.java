@@ -20,7 +20,7 @@ public class DeletaContatoServlet extends HttpServlet {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	String nome = "testeeeeeeeeee";
+	String nome = "inexistente";
 
 	protected void service(HttpServletRequest request, HttpServletResponse response)
 			throws IOException, ServletException {
@@ -57,12 +57,17 @@ public class DeletaContatoServlet extends HttpServlet {
 
 		}
 
+		if (nome != "inexistente"){
 		dao.remove(contato);
 		// imprime o nome do contato que foi deletado
 		out.println("<html>");
 		out.println("<body>");
 		out.println("Contato	" + nome + "	deletado	com	sucesso");
 		out.println("</body>");
-		out.println("</html>");
+		out.println("</html>"); 
+		}
+		else {
+			out.println("Contato	" + nome);
+		}
 	}
 }
