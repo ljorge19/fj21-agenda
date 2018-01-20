@@ -13,7 +13,7 @@
 	    <c:forEach items="${contatoDao.lista}" var="contato"> --%>
 	    
 	    
-		<c:forEach	var="contatos" items="${contatos}">
+		<c:forEach	var="contatos" items="${contatosAbacaxi}">
 	
 		<tr>
 			<td>${contatos.id}</td>

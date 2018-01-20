@@ -7,7 +7,7 @@
 	<script src="js/jquery-ui.js"></script>
 	<style>
 		html, body {
-			background: #B22222;
+			background: #E0EEE0;
 		}	
 	</style>
 </head>

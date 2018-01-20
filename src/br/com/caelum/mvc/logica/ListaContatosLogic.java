@@ -12,7 +12,7 @@ import br.com.caelum.mvc.Logica;
 public class ListaContatosLogic implements Logica {
 	public String executa(HttpServletRequest req, HttpServletResponse res) throws Exception {
 		List<Contato> contatos = new ContatoDao().getLista();
-		req.setAttribute("contatos", contatos);
+		req.setAttribute("contatosAbacaxi", contatos);
 		return "lista-contatos.jsp";
 	}
 }
