@@ -2,12 +2,7 @@
 <%@	taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@taglib tagdir="/WEB-INF/tags" prefix="caelum"%>
 <c:import url="cabecalho.jsp" />
-<head>
-<meta charset="utf-8">
-<link href="css/jquery.css" rel="stylesheet">
-<script src="js/jquery.js"></script>
-<script src="js/jquery-ui.js"></script>
-<head>
+
 <h1>Adiciona Contatos</h1>
 <hr />
 <form action="adicionaContato">
