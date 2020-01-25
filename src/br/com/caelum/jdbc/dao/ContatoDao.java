@@ -13,6 +13,7 @@ import br.com.caelum.jdbc.ConnectionFactory;
 import br.com.caelum.jdbc.modelo.Contato;
 
 public class ContatoDao {
+	
 
 	// a conexão com o banco de dados
 	private Connection connection;

@@ -38,11 +38,12 @@ public class AdicionaContatoServlet extends HttpServlet {
 		Calendar dataNascimento = null;
 		// fazendo a conversão da data
 		try {
+			System.out.println("ljorgeeeeeeeeeeeeeeeeeeeeeeeee1");
 			Date date = new SimpleDateFormat("dd/MM/yyyy").parse(dataEmTexto);
 			dataNascimento = Calendar.getInstance();
 			dataNascimento.setTime(date);
 		} catch (ParseException e) {
-			System.out.println("dsadadsdsa");
+			System.out.println("ljorgeeeeeeeeeeeeeeeeeeeeeeeee2");
 			throw new RuntimeException(e);
 			// out.println("Erro de conversão da data");
 		}
