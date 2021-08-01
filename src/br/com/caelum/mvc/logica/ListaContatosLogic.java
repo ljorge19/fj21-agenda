@@ -14,7 +14,7 @@ public class ListaContatosLogic implements Logica {
 	public String executa(HttpServletRequest req, HttpServletResponse res) throws Exception {
 		
 		Connection	connection	=	(Connection) req.getAttribute("conexao");
-		List<Contato> contatos =  new ContatoDao(connection).getLista();
+		List<Contato> contatos =  new ContatoDao().getLista();
 		
 		req.setAttribute("contatosAbacaxi", contatos);
 		return "lista-contatos.jsp";

@@ -15,7 +15,7 @@ public class RemoveContatoLogic implements Logica {
 		Contato contato = new Contato();
 		contato.setId(id);
 		Connection	connection	=	(Connection) req.getAttribute("conexao");
-		ContatoDao dao = new ContatoDao(connection);
+		ContatoDao dao = new ContatoDao();
 		dao.remove(contato);
 		System.out.println("Excluindo	contato...	");
 		return "mvc?logica=ListaContatosLogic";

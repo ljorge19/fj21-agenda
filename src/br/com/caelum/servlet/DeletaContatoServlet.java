@@ -37,7 +37,8 @@ public class DeletaContatoServlet extends HttpServlet {
 
 		//
 		Connection	connection	=	(Connection) request.getAttribute("conexao");
-		ContatoDao dao = new ContatoDao(connection);
+		ContatoDao dao = new ContatoDao();
+		
 
 		/*
 		 * Contato resultado = dao.selecionaId(contato); nome = resultado.getNome();

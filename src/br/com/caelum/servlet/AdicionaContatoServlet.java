@@ -56,7 +56,7 @@ public class AdicionaContatoServlet extends HttpServlet {
 		contato.setDataNascimento(dataNascimento);
 		// salva o contato
 		Connection	connection	=	(Connection) request.getAttribute("conexao");
-		ContatoDao dao = new ContatoDao(connection);
+		ContatoDao dao = new ContatoDao();
 		dao.adiciona(contato);
 		// imprime o nome do contato que foi adicionado
 		RequestDispatcher rd = request.getRequestDispatcher("/contato-adicionado.jsp");
